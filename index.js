@@ -2,6 +2,10 @@ $('input').blur(function () {
     validateRow(this);
 });
 
+$('#conferir').click(function () {
+    console.log('conferiu');
+});
+
 function validateRow(input) {
     rowId = $(input).closest('[linha]').attr('linha');
 
@@ -23,6 +27,11 @@ function validateRow(input) {
             $.each(proximosInputs, function (index, value) {
                 $(value).prop('disabled', false);
             });
+        }
+
+        if (proximaLinha == 5)
+        {
+            $('#conferir').show();
         }
     }
 }
