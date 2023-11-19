@@ -1,0 +1,90 @@
+:root {
+    --bg-color: #F58216;
+    --modal-color: #FFF6EC;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color)
+}
+
+h1 {
+    font-weight: bold;
+    padding-top: 170px;
+    font-size: 38px;
+    padding-bottom: 10px;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--modal-color);
+    width: 500px;
+    height: 900px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: auto;
+}
+
+.papel {
+    font-size: 28px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 35px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.instrucoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lista {
+    text-align: left;
+}
+
+ol {
+    padding-left: 35px;
+}
+
+ol,
+li {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.btn-start {
+    margin-top: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-start:hover {
+    background-color: #4CAF50;
+}
