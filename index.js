@@ -1,6 +1,11 @@
+let LEVEL = 1
 $('input').blur(function () {
     validateRow(this);
 });
+
+$("#avancar").click(function () {
+
+})
 
 $('#conferir').click(function () {
     let validateFirstRow = changeInputColor(1, checkFirstRow());
@@ -8,7 +13,30 @@ $('#conferir').click(function () {
     let validateThirdRow = changeInputColor(3, checkThirdRow());
     let validateFourthRow = changeInputColor(4, checkFourthRow());
 
+    checkIfWinGame()
+
 });
+
+function checkIfWinGame() {
+    let validateFirstRow = checkFirstRow();
+    let validateSecondRow = checkSecondRow();
+    let validateThirdRow = checkThirdRow();
+    let validateFourthRow = checkFourthRow();
+
+    let win = validateFirstRow && validateSecondRow && validateThirdRow && validateFourthRow;
+
+    if (win) {
+        let modal = document.querySelector(".h-modal");
+        modal.classList.remove("hidden")
+
+        if (LEVEL = 1) {
+            let level = document.querySelector(".first-level");
+            level.classList.add("hidden")
+        }
+
+        LEVEL += 1
+    }
+}
 
 function changeInputColor(linha, boolean) {
     var input01 = document.getElementById(linha + '_1').value;
