@@ -1,4 +1,5 @@
 let LEVEL = 1
+
 $('input').blur(function () {
     validateRow(this);
 });
@@ -14,7 +15,6 @@ $('#conferir').click(function () {
     let validateFourthRow = changeInputColor(4, checkFourthRow());
 
     checkIfWinGame()
-
 });
 
 function checkIfWinGame() {
@@ -168,3 +168,4 @@ function validateRow(input) {
         }
     }
 }
+

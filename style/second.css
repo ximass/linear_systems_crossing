@@ -1,14 +1,17 @@
 html,
 body {
+    height: 100%;
     text-align: center;
 
 }
+
 .second-level {
 
     justify-content: center;
     align-items: center;
     height: 100%;
 }
+
 .flex-container {
     display: flex;
 }
@@ -17,5 +20,4 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
 }
