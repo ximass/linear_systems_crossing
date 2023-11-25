@@ -4,10 +4,6 @@ $('input').blur(function () {
     validateRow(this);
 });
 
-$("#avancar").click(function () {
-
-})
-
 $('#conferir').click(function () {
     let validateFirstRow = changeInputColor(1, checkFirstRow());
     let validateSecondRow = changeInputColor(2, checkSecondRow());
@@ -28,12 +24,6 @@ function checkIfWinGame() {
     if (win) {
         let modal = document.querySelector(".h-modal");
         modal.classList.remove("hidden")
-
-        if (LEVEL = 1) {
-            let level = document.querySelector(".first-level");
-            level.classList.add("hidden")
-        }
-
         LEVEL += 1
     }
 }
