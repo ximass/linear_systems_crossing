@@ -31,11 +31,46 @@
 </head>
 
 <body>
+    <h1 class="page-title"> Resolva as equações isolando e achando o valor para cada uma das varíaveis se possível </h1>
+    <div class="h-modal hidden">
+        <div class="content">
+            <h2 class="modal-title"> Parabéns você acertou. Responda: </h2>
+            <div class="question">
+                <h4>O que aconteceu com o <b> W </b> na equação 4? Como isso é chamado?</h4>
+                <label class="option">
+                    <input type="radio" class="anwser-1" name="answer" value="1"> A variável <b>W</b> foi eliminada na
+                    equação 4. Isso é
+                    conhecido como redução ou eliminação de variáveis.
+                </label>
+
+                <label class="option">
+                    <input type="radio" class="anwser-2" name="answer" value="2"> A variável <b>W</b> foi isolada na
+                    equação 4. Isso é
+                    chamado
+                    de isolamento de variável.
+                </label>
+
+                <label class="option">
+                    <input type="radio" class="anwser-3" name="answer" value="3"> A variável <b>W</b> desapareceu na
+                    equação 4. Isso é
+                    referido como anulação ou cancelamento de variáveis.
+                </label>
+
+                <label class="option">
+                    <input type="radio" class="anwser-4" name="answer" value="4"> A variável <b>W</b> é uma variável
+                    livre na equação 4,
+                    indicando que o sistema tem infinitas soluções.
+                </label>
+            </div>
+            <button id="check-question" class="btn btn-primary botao"> Responder </button>
+            <a href="third-level.html" id="avancar" class="btn btn-success botao hidden"> Avançar </a>
+        </div>
+    </div>
     <div class="brackets">
         <img src="imgs/Vector (1).svg" style="height: 170px;">
         <div id="equacao">
             <h3>x + w = 475</h3>
-            <h3>x + y = 655</h3>
+            <h3>x + y = 625</h3>
             <h3>y + z = 1050</h3>
             <h3>z + w = 900</h3>
         </div>
@@ -99,7 +134,6 @@
                 </div>
             </div>
         </div>
-
     </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

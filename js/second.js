@@ -1,10 +1,57 @@
 $('#conferir').click(function () {
-    console.log("conferiu")
     let win = checkAllEquations();
     if (win) {
-        //mostrar um modal aqui
+        let hmodal = document.querySelector(".h-modal")
+        hmodal.classList.remove("hidden")
+    } else {
+        let pageTitle = document.querySelector(".page-title")
+        pageTitle.innerText = "Não é bem isso! Falta algo"
     }
 });
+
+
+$('#check-question').click(function () {
+    checkAnwser()
+});
+
+function shuffleOptions() {
+    const question = document.querySelector('.question');
+
+    const options = question.querySelectorAll('.option');
+
+    const optionsArray = Array.from(options);
+
+    optionsArray.sort(() => Math.random() - 0.5);
+
+    options.forEach(option => option.remove());
+
+    optionsArray.forEach(option => question.appendChild(option));
+}
+
+function checkAnwser() {
+    let radioButton = document.querySelector(".anwser-4")
+    if (!radioButton.checked) {
+        shuffleOptions()
+        alert("Resposta incorreta, tente novamente!")
+    } else {
+        eraseModal()
+    }
+}
+
+function eraseModal() {
+    let classContent = document.querySelector(".question")
+    let btnResponder = document.querySelector("#check-question")
+    let avancar = document.querySelector("#avancar")
+    let title = document.querySelectorAll(".modal-title")
+
+
+    classContent.classList.add("hidden")
+    btnResponder.classList.add("hidden")
+    avancar.classList.remove("hidden")
+
+    title[0].innerText = "Parabéns, avance para o próximo nível"
+}
+
 
 function checkAllEquations() {
     const eq1 = document.getElementById('1').value;
