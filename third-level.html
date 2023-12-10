@@ -7,18 +7,24 @@
     <title>Sistemas Lineares</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="style/third.css">
+    <link rel="stylesheet" href="style/third.css">
 </head>
 
 <body>
-    <h2 id="titulo">Agora, imagine que está ocorrendo uma obra na rua W.
+    <div class="h-modal hidden">
+        <div class="content">
+            <h2> Parabéns você chegou até o final! </h2>
+            <a href="index.html" class="btn btn-success"> Jogar novamente! </a>
+        </div>
+    </div>
+    <h2 id="titulo">Esta ocorrendo uma obra que interrompeu o fluxo de carros na rua W.
         Resolva as equações modo que tenhamos os valores dos
         fluxos de carros em cada uma das ruas.
     </h2>
     <form>
         <div class="third-level flex-container">
-            <div>
-                <div class="row " linha="1">
+            <div class="inputs">
+                <!-- <div class="row " linha="1">
                     <div class="row">
                         <h2 class="mr-3"> W: </h2>
                     </div>
@@ -28,7 +34,7 @@
                             <input type="text" class="form-control" id="1">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="row" linha="2">
                     <div class="row">
@@ -75,15 +81,25 @@
             </div>
         </div>
     </form>
+
+    <div class="col-5">
+        <h3> Equaçoes encontradas anteriormente: </h3>
+        <div id="equacao">
+            <h4>x = 475 - w</h4>
+            <h4>y = 150 + w</h4>
+            <h4>z = 900 - w</h4>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="js/third.js"></script>
 </body>
 

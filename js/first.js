@@ -83,7 +83,7 @@ function checkSecondRow() {
     let validateCarIn = carIn == 'xy' || carIn == 'yx';
 
     let carOut = parseInt(input03) + parseInt(input04);
-    let validateCarOut = carOut == 655;
+    let validateCarOut = carOut == 625;
 
     return validateCarIn && validateCarOut;
 }
