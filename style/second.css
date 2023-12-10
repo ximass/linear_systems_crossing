@@ -11,6 +11,8 @@ h1 {
 }
 
 .h-modal {
+    justify-content: center;
+    display: flex;
     position: fixed;
     left: 0;
     top: 0;
@@ -51,6 +53,9 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 500px;
+    max-height: 500px;
+    padding: 50px;
 }
 
 .question {

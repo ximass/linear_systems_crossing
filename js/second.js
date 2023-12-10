@@ -1,5 +1,6 @@
 $('#conferir').click(function () {
     let win = checkAllEquations();
+    
     if (win) {
         let hmodal = document.querySelector(".h-modal")
         hmodal.classList.remove("hidden")
